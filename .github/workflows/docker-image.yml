@@ -18,8 +18,10 @@ jobs:
       with:
         python-version: 3.6
              
-
-    - name: Build and Push Docker Image
+    - name: Test with unittest
+      run:  python3 source/test_drowsiness.py
+    
+    - name: Docker Image Building and Pushing
       uses: mr-smithers-excellent/docker-build-push@v4
       with:
         image: teeyagundi/spe_project
@@ -28,7 +30,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
 
-    - name: Deploy to heroku        
+    - name: Deploy the application to heroku cloud platform
       uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
       with:
         heroku_api_key: ${{secrets.HEROKU_KEY}}
