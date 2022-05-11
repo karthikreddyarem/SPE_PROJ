@@ -17,12 +17,12 @@
         </div>
         <div class="row mt-3 mb-5">
             <div class="col-6 d-flex justify-content-end">
-                <button id="start" onclick="startWebCam()" class="btn btn-outline-success"><i class="fa fa-video-camera"
+                <button id="start" onclick="start()" class="btn btn-outline-success"><i class="fa fa-video-camera"
                                                                                         aria-hidden="true"></i> Start
                 </button>
             </div>
             <div class="col-6 d-flex justify-content-start">
-                <button id="stop" onclick="stopWebCam()" class="btn btn-danger active"><i class="fa fa-stop"
+                <button id="stop" onclick="stop()" class="btn btn-danger active"><i class="fa fa-stop"
                                                                                     aria-hidden="true"></i> Stop
                 </button>
             </div>
@@ -48,28 +48,6 @@
 </div>
 {% endblock %}
 {% block custom_js %}
-
-<script type="text/javascript">
-		var video = document.querySelector("video");
-		function startWebCam() {
-			$("img").attr("src", "{{url_for('main.video_feed')}}");
-			if (navigator.mediaDevices.getUserMedia) {
-				navigator.mediaDevices.getUserMedia({ video: true })
-			    	.then(function (stream) {
-			      		video.srcObject = stream;
-			    	})
-			    	.catch(function (err0r) {
-			      		console.log("Something went wrong!");
-			    	});
-			}
-		}
-
-		function stopWebCam(){
-			$("img").attr("src", "/static/images/mask_image.jpg");
-			video.pause();
-		}
-// 		startWebCam();
-</script>
 <script>
 $(document).ready(function(){
 
@@ -77,7 +55,7 @@ $(document).ready(function(){
 })
 
     function stop(){
-        $("img").attr("src", "/static/images/mask_image.jpg");
+        $("img").attr("src", "/static/images/image.jpeg");
         $("#stop").attr("class","btn btn-danger active");
 
         $("#start").attr("class","btn btn-outline-success");

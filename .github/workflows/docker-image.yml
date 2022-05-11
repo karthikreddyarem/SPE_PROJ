@@ -18,11 +18,11 @@ jobs:
       with:
         python-version: 3.6
 
-    # - name: Install all the required packages and dependencies
-    #   run: pip3 install -r requirements.txt
+    - name: Install all the required packages and dependencies
+      run: pip3 install -r requirements.txt
              
-    # - name: Test with unittest
-    #   run:  python3 source/test_drowsiness.py
+    - name: Test with unittest
+      run:  python3 source/test_drowsiness.py
     
     - name: Docker Image Building and Pushing
       uses: mr-smithers-excellent/docker-build-push@v4
