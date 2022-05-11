@@ -17,6 +17,9 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.6
+
+    - name: Install all the required packages and dependencies
+      run: pip3 install -r requirements.txt
              
     - name: Test with unittest
       run:  python3 source/test_drowsiness.py
