@@ -1,6 +1,7 @@
 {% extends "template.html" %}
 {% block content %}
 <div class="jumbotron">
+	<video autoplay="true"></video>
     <div class="row">
         <div class="col-12">
             <h1>DROWSINESS DETECTION</h1>
@@ -17,17 +18,36 @@
         </div>
         <div class="row mt-3 mb-5">
             <div class="col-6 d-flex justify-content-end">
-                <button id="start" onclick="start()" class="btn btn-outline-success"><i class="fa fa-video-camera"
+                <button id="start" onclick="startWebCam()" class="btn btn-outline-success"><i class="fa fa-video-camera"
                                                                                         aria-hidden="true"></i> Start
                 </button>
             </div>
             <div class="col-6 d-flex justify-content-start">
-                <button id="stop" onclick="stop()" class="btn btn-danger active"><i class="fa fa-stop"
+                <button id="stop" onclick="stopWebCam()" class="btn btn-danger active"><i class="fa fa-stop"
                                                                                     aria-hidden="true"></i> Stop
                 </button>
             </div>
         </div>
         <hr>
+	<script type="text/javascript">
+		var video = document.querySelector("video");
+		function startWebCam() {
+			if (navigator.mediaDevices.getUserMedia) {
+				navigator.mediaDevices.getUserMedia({ video: true })
+			    	.then(function (stream) {
+			      		video.srcObject = stream;
+			    	})
+			    	.catch(function (err0r) {
+			      		console.log("Something went wrong!");
+			    	});
+			}
+		}
+
+		function stopWebCam(){
+			video.pause();
+		}
+// 		startWebCam();
+	</script>
         <div class="row">
             <h4>Description:</h4>
         </div>
