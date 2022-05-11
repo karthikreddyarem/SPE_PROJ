@@ -1,0 +1,37 @@
+name: Driver Drowsiness Detection
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.6
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.6
+             
+
+    - name: Build and Push Docker Image
+      uses: mr-smithers-excellent/docker-build-push@v4
+      with:
+        image: teeyagundi/spe_project
+        tag: latest
+        registry: docker.io
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+
+    - name: Deploy to heroku        
+      uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+      with:
+        heroku_api_key: ${{secrets.HEROKU_KEY}}
+        heroku_app_name: "drowsiness-detection-iiitb"
+        heroku_email: "karthikavreddy@gmail.com"
+        usedocker: true

@@ -1,0 +1,71 @@
+{% extends "template.html" %}
+{% block content %}
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-12">
+            <h1>DROWSINESS DETECTION</h1>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="container-fluid">
+        <div id="frame_container" class="row">
+            <div class="col-12">
+                <img src="/static/images/image.jpeg"
+                     class="img-thumbnail img-fluid mx-auto d-block">
+            </div>
+        </div>
+        <div class="row mt-3 mb-5">
+            <div class="col-6 d-flex justify-content-end">
+                <button id="start" onclick="start()" class="btn btn-outline-success"><i class="fa fa-video-camera"
+                                                                                        aria-hidden="true"></i> Start
+                </button>
+            </div>
+            <div class="col-6 d-flex justify-content-start">
+                <button id="stop" onclick="stop()" class="btn btn-danger active"><i class="fa fa-stop"
+                                                                                    aria-hidden="true"></i> Stop
+                </button>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <h4>Description:</h4>
+        </div>
+        <div class="row">
+            <p>With this Python project, we will be making a drowsiness detection system. A countless number of people drive on the highway day and night. Taxi drivers, bus drivers, truck drivers and people traveling long-distance suffer from lack of sleep. Due to which it becomes very dangerous to drive when feeling sleepy.</p>
+            <p>For more details and implementation, check out our github profiles!</p>
+        </div>
+        <div class="row">
+            <h4>Who Are We?</h4>
+        </div>
+        <div class="row mb-5">
+            <p>We are SVS Gopal, AV Kartik Reddy and G Vamsi, studying engineering at IIIT Bangalore. This is our project for the SPE course.</p>
+            <p class="d-flex mx-auto lead text-danger"><strong> Drive Safe and Reach Home</strong>.</p>
+            <p></p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block custom_js %}
+<script>
+$(document).ready(function(){
+
+    $('#live').attr('class', 'nav-item active');
+})
+
+    function stop(){
+        $("img").attr("src", "/static/images/mask_image.jpg");
+        $("#stop").attr("class","btn btn-danger active");
+
+        $("#start").attr("class","btn btn-outline-success");
+    }
+    function start(){
+        $("img").attr("src", "{{url_for('main.video_feed')}}");
+        $("#start").attr("class","btn btn-success active");
+
+        $("#stop").attr("class","btn btn-outline-danger");
+    }
+
+</script>
+
+{% endblock %}
