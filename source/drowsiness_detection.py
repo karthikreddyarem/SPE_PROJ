@@ -76,10 +76,10 @@ def main_fun(img,i,rpred,lpred,thresh_time,cum_score,output):
         cv2.putText(img,'cum%:'+str((thresh_time*100/10)),(50,height-20),cv2.FONT_HERSHEY_SIMPLEX,1,(165,255,0),1)
         if(thresh_time>=6):
             cv2.putText(img,'DROWSINESS',(300,height-20),cv2.FONT_HERSHEY_SIMPLEX,1,(165,255,0),2)
-            logger_info.info("Status:- Drowsiness State with Threshold time %d", thresh_time)
+            logger_info.info("Status:- 0 with threshold time %d", thresh_time)
             output.append(1)
         else:
-            logger_info.info("Status:- Drowsiness not detected with threshold time %d", thresh_time)
+            logger_info.info("Status:- 1 with threshold time %d", thresh_time)
             output.append(0)
         return img,i,cum_score,output
 
