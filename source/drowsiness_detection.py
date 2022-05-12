@@ -2,6 +2,8 @@ import cv2
 from keras.models import load_model
 import keras
 import numpy as np
+import logging
+import warnings
 
 face = cv2.CascadeClassifier('haar_cascade_files/haarcascade_frontalface_alt.xml')
 leye = cv2.CascadeClassifier('haar_cascade_files/haarcascade_lefteye_2splits.xml')
@@ -13,6 +15,11 @@ score=0
 output_annotations = []
 cum_score = []
 
+
+
+logging.basicConfig(filename='drowsy_detections.log',format='%(asctime)s %(message)s')
+logger_info=logging.getLogger()
+logger_info.setLevel(logging.INFO)
 
 def main_fun(img,i,rpred,lpred,thresh_time,cum_score,output):
         label_val=1
@@ -69,8 +76,10 @@ def main_fun(img,i,rpred,lpred,thresh_time,cum_score,output):
         cv2.putText(img,'cum%:'+str((thresh_time*100/10)),(50,height-20),cv2.FONT_HERSHEY_SIMPLEX,1,(165,255,0),1)
         if(thresh_time>=6):
             cv2.putText(img,'DROWSINESS',(300,height-20),cv2.FONT_HERSHEY_SIMPLEX,1,(165,255,0),2)
+            logger_info.info("Status:- Drowsiness State with Threshold time %d", thresh_time)
             output.append(1)
         else:
+            logger_info.info("Status:- Drowsiness not detected with threshold time %d", thresh_time)
             output.append(0)
         return img,i,cum_score,output
 
