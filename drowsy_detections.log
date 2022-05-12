@@ -1,90 +1,58 @@
-2022-05-12 15:26:42,104  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-2022-05-12 15:26:45,533 127.0.0.1 - - [12/May/2022 15:26:45] "[37mGET / HTTP/1.1[0m" 200 -
-2022-05-12 15:26:55,027 Status:- Drowsiness not detected with threshold time 0
-2022-05-12 15:26:55,075 127.0.0.1 - - [12/May/2022 15:26:55] "[37mGET /video_feed HTTP/1.1[0m" 200 -
-2022-05-12 15:26:55,205 Status:- Drowsiness not detected with threshold time 0
-2022-05-12 15:26:55,337 Status:- Drowsiness not detected with threshold time 0
-2022-05-12 15:26:55,473 Status:- Drowsiness not detected with threshold time 0
-2022-05-12 15:26:55,606 Status:- Drowsiness not detected with threshold time 0
-2022-05-12 15:26:55,734 Status:- Drowsiness not detected with threshold time 0
-2022-05-12 15:26:55,863 Status:- Drowsiness not detected with threshold time 0
-2022-05-12 15:26:55,999 Status:- Drowsiness not detected with threshold time 0
-2022-05-12 15:26:56,141 Status:- Drowsiness not detected with threshold time 0
-2022-05-12 15:26:56,267 Status:- Drowsiness not detected with threshold time 0
-2022-05-12 15:26:56,390 Status:- Drowsiness not detected with threshold time 0
-2022-05-12 15:26:56,519 Status:- Drowsiness not detected with threshold time 3
-2022-05-12 15:26:56,643 Status:- Drowsiness not detected with threshold time 3
-2022-05-12 15:26:56,774 Status:- Drowsiness not detected with threshold time 2
-2022-05-12 15:26:56,900 Status:- Drowsiness not detected with threshold time 1
-2022-05-12 15:26:57,033 Status:- Drowsiness not detected with threshold time 1
-2022-05-12 15:26:57,167 Status:- Drowsiness not detected with threshold time 0
-2022-05-12 15:26:57,294 Status:- Drowsiness not detected with threshold time 0
-2022-05-12 15:26:57,438 Status:- Drowsiness not detected with threshold time 0
-2022-05-12 15:26:57,576 Status:- Drowsiness not detected with threshold time 0
-2022-05-12 15:26:57,716 Status:- Drowsiness not detected with threshold time 0
-2022-05-12 15:26:57,879 Status:- Drowsiness not detected with threshold time 0
-2022-05-12 15:26:58,018 Status:- Drowsiness not detected with threshold time 0
-2022-05-12 15:26:58,149 Status:- Drowsiness not detected with threshold time 1
-2022-05-12 15:26:58,288 Status:- Drowsiness not detected with threshold time 1
-2022-05-12 15:26:58,413 Status:- Drowsiness not detected with threshold time 1
-2022-05-12 15:26:58,540 Status:- Drowsiness not detected with threshold time 2
-2022-05-12 15:26:58,666 Status:- Drowsiness not detected with threshold time 3
-2022-05-12 15:26:58,818 Status:- Drowsiness not detected with threshold time 4
-2022-05-12 15:26:58,964 Status:- Drowsiness not detected with threshold time 5
-2022-05-12 15:26:59,094 Status:- Drowsiness State with Threshold time 6
-2022-05-12 15:26:59,231 Status:- Drowsiness State with Threshold time 7
-2022-05-12 15:26:59,391 Status:- Drowsiness State with Threshold time 7
-2022-05-12 15:26:59,518 Status:- Drowsiness State with Threshold time 8
-2022-05-12 15:26:59,643 Status:- Drowsiness State with Threshold time 9
-2022-05-12 15:26:59,796 Status:- Drowsiness State with Threshold time 9
-2022-05-12 15:26:59,942 Status:- Drowsiness State with Threshold time 9
-2022-05-12 15:27:00,091 Status:- Drowsiness State with Threshold time 9
-2022-05-12 15:27:00,237 Status:- Drowsiness State with Threshold time 9
-2022-05-12 15:27:00,380 Status:- Drowsiness State with Threshold time 9
-2022-05-12 15:27:00,511 Status:- Drowsiness State with Threshold time 9
-2022-05-12 15:27:00,668 Status:- Drowsiness State with Threshold time 9
-2022-05-12 15:27:00,814 Status:- Drowsiness State with Threshold time 9
-2022-05-12 15:27:00,965 Status:- Drowsiness State with Threshold time 9
-2022-05-12 15:27:01,098 Status:- Drowsiness State with Threshold time 9
-2022-05-12 15:27:01,231 Status:- Drowsiness State with Threshold time 9
-2022-05-12 15:27:01,358 Status:- Drowsiness State with Threshold time 9
-2022-05-12 15:27:01,484 Status:- Drowsiness State with Threshold time 9
-2022-05-12 15:27:01,614 Status:- Drowsiness State with Threshold time 9
-2022-05-12 15:27:01,740 Status:- Drowsiness State with Threshold time 9
-2022-05-12 15:27:01,875 Status:- Drowsiness State with Threshold time 9
-2022-05-12 15:27:02,019 Status:- Drowsiness State with Threshold time 9
-2022-05-12 15:27:02,152 Status:- Drowsiness State with Threshold time 9
-2022-05-12 15:27:02,294 Status:- Drowsiness State with Threshold time 9
-2022-05-12 15:27:02,429 Status:- Drowsiness State with Threshold time 9
-2022-05-12 15:27:02,570 Status:- Drowsiness State with Threshold time 9
-2022-05-12 15:27:02,694 Status:- Drowsiness State with Threshold time 9
-2022-05-12 15:27:02,940 Status:- Drowsiness State with Threshold time 9
-2022-05-12 15:27:03,332 Status:- Drowsiness State with Threshold time 9
-2022-05-12 15:27:03,599 Status:- Drowsiness State with Threshold time 8
-2022-05-12 15:27:03,887 Status:- Drowsiness State with Threshold time 7
-2022-05-12 15:27:04,176 Status:- Drowsiness State with Threshold time 6
-2022-05-12 15:27:04,462 Status:- Drowsiness not detected with threshold time 5
-2022-05-12 15:27:04,725 Status:- Drowsiness not detected with threshold time 4
-2022-05-12 15:27:04,983 Status:- Drowsiness not detected with threshold time 3
-2022-05-12 15:27:05,139 Status:- Drowsiness not detected with threshold time 2
-2022-05-12 15:27:05,279 Status:- Drowsiness not detected with threshold time 1
-2022-05-12 15:27:05,405 Status:- Drowsiness not detected with threshold time 0
-2022-05-12 15:27:05,532 Status:- Drowsiness not detected with threshold time 1
-2022-05-12 15:27:05,681 Status:- Drowsiness not detected with threshold time 2
-2022-05-12 15:27:05,858 Status:- Drowsiness not detected with threshold time 3
-2022-05-12 15:27:05,999 Status:- Drowsiness not detected with threshold time 3
-2022-05-12 15:27:06,135 Status:- Drowsiness not detected with threshold time 3
-2022-05-12 15:27:06,273 Status:- Drowsiness not detected with threshold time 3
-2022-05-12 15:27:06,431 Status:- Drowsiness not detected with threshold time 3
-2022-05-12 15:27:06,566 Status:- Drowsiness not detected with threshold time 3
-2022-05-12 15:27:06,703 Status:- Drowsiness not detected with threshold time 4
-2022-05-12 15:27:06,863 Status:- Drowsiness not detected with threshold time 3
-2022-05-12 15:27:07,009 Status:- Drowsiness not detected with threshold time 2
-2022-05-12 15:27:07,152 Status:- Drowsiness not detected with threshold time 1
-2022-05-12 15:27:07,285 Status:- Drowsiness not detected with threshold time 1
-2022-05-12 15:27:07,436 Status:- Drowsiness not detected with threshold time 1
-2022-05-12 15:27:07,564 Status:- Drowsiness not detected with threshold time 1
-2022-05-12 15:27:07,694 Status:- Drowsiness not detected with threshold time 1
-2022-05-12 15:27:07,864 Status:- Drowsiness not detected with threshold time 1
-2022-05-12 15:27:08,048 Status:- Drowsiness not detected with threshold time 0
-2022-05-12 15:27:08,187 Status:- Drowsiness not detected with threshold time 0
+2022-05-12 19:21:39,526 Status:- 1 with threshold time 0
+2022-05-12 19:21:39,584 Status:- 1 with threshold time 0
+2022-05-12 19:21:39,646 Status:- 1 with threshold time 0
+2022-05-12 19:21:39,715 Status:- 1 with threshold time 0
+2022-05-12 19:21:39,780 Status:- 1 with threshold time 0
+2022-05-12 19:21:39,844 Status:- 1 with threshold time 0
+2022-05-12 19:21:39,913 Status:- 1 with threshold time 0
+2022-05-12 19:21:39,979 Status:- 1 with threshold time 0
+2022-05-12 19:21:40,042 Status:- 1 with threshold time 0
+2022-05-12 19:21:41,251 Status:- 1 with threshold time 0
+2022-05-12 19:21:41,407 Status:- 1 with threshold time 0
+2022-05-12 19:21:41,561 Status:- 1 with threshold time 1
+2022-05-12 19:21:41,717 Status:- 1 with threshold time 2
+2022-05-12 19:21:41,871 Status:- 1 with threshold time 3
+2022-05-12 19:21:42,024 Status:- 1 with threshold time 4
+2022-05-12 19:21:42,190 Status:- 1 with threshold time 5
+2022-05-12 19:21:42,346 Status:- 0 with threshold time 6
+2022-05-12 19:21:42,565 Status:- 0 with threshold time 7
+2022-05-12 19:21:42,869 Status:- 0 with threshold time 8
+2022-05-12 19:21:43,162 Status:- 0 with threshold time 9
+2022-05-12 19:21:43,458 Status:- 0 with threshold time 9
+2022-05-12 19:21:43,743 Status:- 0 with threshold time 9
+2022-05-12 19:21:44,058 Status:- 0 with threshold time 9
+2022-05-12 19:21:44,357 Status:- 0 with threshold time 9
+2022-05-12 19:21:44,643 Status:- 0 with threshold time 9
+2022-05-12 19:21:44,840 Status:- 0 with threshold time 9
+2022-05-12 19:21:44,996 Status:- 0 with threshold time 9
+2022-05-12 19:21:45,156 Status:- 0 with threshold time 9
+2022-05-12 19:21:45,310 Status:- 0 with threshold time 9
+2022-05-12 19:21:45,477 Status:- 0 with threshold time 9
+2022-05-12 19:21:45,630 Status:- 0 with threshold time 9
+2022-05-12 19:21:45,802 Status:- 0 with threshold time 9
+2022-05-12 19:21:45,983 Status:- 0 with threshold time 9
+2022-05-12 19:21:46,150 Status:- 0 with threshold time 9
+2022-05-12 19:21:46,312 Status:- 0 with threshold time 9
+2022-05-12 19:21:46,476 Status:- 0 with threshold time 9
+2022-05-12 19:21:46,637 Status:- 0 with threshold time 9
+2022-05-12 19:21:46,804 Status:- 0 with threshold time 9
+2022-05-12 19:21:46,967 Status:- 0 with threshold time 9
+2022-05-12 19:21:47,121 Status:- 0 with threshold time 9
+2022-05-12 19:21:47,282 Status:- 0 with threshold time 9
+2022-05-12 19:21:47,437 Status:- 0 with threshold time 9
+2022-05-12 19:21:47,602 Status:- 0 with threshold time 9
+2022-05-12 19:21:47,761 Status:- 0 with threshold time 9
+2022-05-12 19:21:47,926 Status:- 0 with threshold time 9
+2022-05-12 19:21:48,046 Status:- 0 with threshold time 9
+2022-05-12 19:21:48,118 Status:- 0 with threshold time 8
+2022-05-12 19:21:48,350 Status:- 0 with threshold time 7
+2022-05-12 19:21:48,573 Status:- 0 with threshold time 6
+2022-05-12 19:21:48,852 Status:- 1 with threshold time 5
+2022-05-12 19:21:49,091 Status:- 1 with threshold time 5
+2022-05-12 19:21:49,303 Status:- 1 with threshold time 4
+2022-05-12 19:21:49,580 Status:- 1 with threshold time 3
+2022-05-12 19:21:49,875 Status:- 1 with threshold time 3
+2022-05-12 19:21:50,172 Status:- 1 with threshold time 3
+2022-05-12 19:21:50,498 Status:- 1 with threshold time 4
+2022-05-12 19:21:50,816 Status:- 1 with threshold time 5
+2022-05-12 19:21:51,151 Status:- 0 with threshold time 6
